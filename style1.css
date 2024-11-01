@@ -153,6 +153,7 @@ img {
 figure {
     width: 400px;
     display: inline-block;
+    margin-right: auto;
     padding: .5em;
     background-color: rgb(63, 60, 63);
     color: white;
