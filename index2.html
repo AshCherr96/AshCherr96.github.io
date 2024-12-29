@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <h1 id="title">CodeCamp Survey Form</h1>
+    <p id="description">Thanks for taking the time to fill out this form!</p>
+    
+    <form id="survey-form"> 
+         <label id="name-label">What is your Name? <input id="name" type="text" placeholder="John Smith" required ></label> 
+      <label id="email-label">What is your Email? <input id="email" type="email" placeholder="example@gmail.com" required></label>
+    <label id="number-label">What is your Age? <input id="number" type="number" min="13" max="110" placeholder="18" /></label>
+    
+        <legend>Would you recommend CodeCamp to a friend?</legend>
+       <label id="referrer"> <input type="radio" value="1" name="yes-no-rec" class="inline" checked/>Yes</input>
+    <input type="radio" value="2" name="yes-no-rec" class="inline">No</input>
+
+        <label id="feature">What are the best features of CodeCamp? (select all that apply)</label>
+    <input type="checkbox" value="1" class="inline">Community Forum</input>
+    <input type="checkbox" value="2" class="inline">Project Variety</input>
+    <input type="checkbox" value="3" class="inline">Open Source </input>
+    <input type="checkbox" value="4" class="inline">Code Challenges</input>
+    
+        <label for="dropdown">How did you hear about us?</label>
+    <select id="dropdown" name="dropdown">
+      <option value="">(Select One)</option>
+      <option value="1">Social Media: Instagram, Facebook, TikTok, etc.</option>
+      <option value="2">YouTube</option>
+      <option value="3">GitHub Forum</option>
+      <option value="4">Other</option>
+    </select>
+    
+ <label for="comments-and-suggestions">Please leave comments and suggestions here: </label>        <textarea id="comments-and-suggestions" name="comments-and-suggestions" rows="3" cols="30" placeholder="I would suggest..." ></textarea>
+
+    <input id="submit" type="submit">
+    </form>
+    </body>
+    </html>
